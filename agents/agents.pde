@@ -1,9 +1,9 @@
 int seed = int(random(999997));
 ArrayList<Agent> agents;
-int num_agents = 20;
+int num_agents = 5;
 
 void setup() {
-  size(960, 960);
+  size(1660, 1260);
   smooth(8);
   pixelDensity(2);
   generate();
@@ -19,11 +19,8 @@ void draw() {
   }
   counter += 1;
   fill(255);
-  rect(0,0,width,20);
   fill(0);
-  text(str(agents.size()),10,20);
-  text(str(counter),40,20);
-  if(counter == 2000) {
+  if(counter == 10000) {
     noLoop();
   }
   if(counter==20 || counter==50 || counter == 100 || counter == 200 || counter == 500) {

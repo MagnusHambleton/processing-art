@@ -1,12 +1,9 @@
 float[] lines;
 
 void setup() {
-  size(1600,800);
+  size(1500,1000);
   background(255);
   strokeWeight(0.5);
-  print(height);
-  print(width);
-  print(float(width/2));
   lines = new float[40];
   for (int i = 0; i < lines.length; i++) {
     lines[i] = pow(random(0,10),3);
