@@ -1,11 +1,10 @@
 int seed = int(random(999997));
 ArrayList<Agent> agents;
-int num_agents = 5;
+int num_agents = 20;
 
 void setup() {
-  size(1660, 1260);
+  size(1660, 960);
   smooth(8);
-  pixelDensity(2);
   generate();
   background(255);
 }
