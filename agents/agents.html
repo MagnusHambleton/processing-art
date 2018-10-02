@@ -5,8 +5,20 @@
 
  </head>
  <body>
-   <script src="../processing.min.js"></script>
-   <canvas data-processing-sources="agents.pde"></canvas>  
-
- </body>
+   <script type="text/javascript">
+       function Draw () {
+	var e, surface;
+	e = document.getElementById ("surface");
+	/* Begin size adjusting. */
+	e.width = e.offsetWidth;
+	e.height = e.offsetHeight;
+	/* End size adjusting. */
+	surface = e.getContext ("2d");
+	surface.strokeRect (10, 10, 20, 20);
+}
+window.onload = Draw ()
+</script>
+    <script src="../processing.min.js"></script>
+   <canvas id="surface" data-processing-sources="agents.pde"></canvas>  
+</body>
 </html>

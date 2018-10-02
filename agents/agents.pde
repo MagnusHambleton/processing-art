@@ -3,10 +3,12 @@ ArrayList<Agent> agents;
 int num_agents = 20;
 
 void setup() {
-  size(1660, 960);
-  smooth(8);
+  size(1660, 960,JAVA2D);
   generate();
+  smooth();
+  //pixelDensity(2);
   background(255);
+  strokeWeight(0.2);
 }
 
 int counter = 1;
